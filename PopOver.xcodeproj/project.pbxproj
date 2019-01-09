@@ -14,6 +14,10 @@
 		8302A98521D037F900D46734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302A98321D037F900D46734 /* LaunchScreen.storyboard */; };
 		8302A99021D037F900D46734 /* PopOverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A98F21D037F900D46734 /* PopOverTests.swift */; };
 		8302A99B21D037F900D46734 /* PopOverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A99A21D037F900D46734 /* PopOverUITests.swift */; };
+		8302A9A921D03DBC00D46734 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A9A821D03DBC00D46734 /* PopOverViewController.swift */; };
+		8362B4E121DC07C800BAFAB5 /* CustomPopoverSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362B4E021DC07C800BAFAB5 /* CustomPopoverSegue.swift */; };
+		8362B4E521DC173E00BAFAB5 /* CustomDismissPopoverSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362B4E421DC173E00BAFAB5 /* CustomDismissPopoverSegue.swift */; };
+		8362B4E821E2A5B800BAFAB5 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362B4E721E2A5B800BAFAB5 /* Interactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		8302A99621D037F900D46734 /* PopOverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopOverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8302A99A21D037F900D46734 /* PopOverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverUITests.swift; sourceTree = "<group>"; };
 		8302A99C21D037F900D46734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8302A9A821D03DBC00D46734 /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
+		8362B4E021DC07C800BAFAB5 /* CustomPopoverSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopoverSegue.swift; sourceTree = "<group>"; };
+		8362B4E421DC173E00BAFAB5 /* CustomDismissPopoverSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDismissPopoverSegue.swift; sourceTree = "<group>"; };
+		8362B4E721E2A5B800BAFAB5 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,11 @@
 		8302A97921D037F800D46734 /* PopOver */ = {
 			isa = PBXGroup;
 			children = (
+				8362B4E621E2A58500BAFAB5 /* InteractorClass */,
+				8362B4DF21DC078A00BAFAB5 /* Custom Segue Animation */,
 				8302A97A21D037F800D46734 /* AppDelegate.swift */,
 				8302A97C21D037F800D46734 /* ViewController.swift */,
+				8302A9A821D03DBC00D46734 /* PopOverViewController.swift */,
 				8302A97E21D037F800D46734 /* Main.storyboard */,
 				8302A98121D037F900D46734 /* Assets.xcassets */,
 				8302A98321D037F900D46734 /* LaunchScreen.storyboard */,
@@ -123,6 +134,23 @@
 				8302A99C21D037F900D46734 /* Info.plist */,
 			);
 			path = PopOverUITests;
+			sourceTree = "<group>";
+		};
+		8362B4DF21DC078A00BAFAB5 /* Custom Segue Animation */ = {
+			isa = PBXGroup;
+			children = (
+				8362B4E021DC07C800BAFAB5 /* CustomPopoverSegue.swift */,
+				8362B4E421DC173E00BAFAB5 /* CustomDismissPopoverSegue.swift */,
+			);
+			path = "Custom Segue Animation";
+			sourceTree = "<group>";
+		};
+		8362B4E621E2A58500BAFAB5 /* InteractorClass */ = {
+			isa = PBXGroup;
+			children = (
+				8362B4E721E2A5B800BAFAB5 /* Interactor.swift */,
+			);
+			path = InteractorClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8362B4E821E2A5B800BAFAB5 /* Interactor.swift in Sources */,
 				8302A97D21D037F800D46734 /* ViewController.swift in Sources */,
+				8362B4E521DC173E00BAFAB5 /* CustomDismissPopoverSegue.swift in Sources */,
 				8302A97B21D037F800D46734 /* AppDelegate.swift in Sources */,
+				8362B4E121DC07C800BAFAB5 /* CustomPopoverSegue.swift in Sources */,
+				8302A9A921D03DBC00D46734 /* PopOverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
